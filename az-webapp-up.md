@@ -123,7 +123,7 @@ Enregistrez vos modifications et quittez nano. Utilisez la commande `^O` pour en
 Vous allez maintenant redéployer l’application. Remplacez `<app_name>` par votre application.
 
 ```bash
-az webapp up -n <app_name>
+az webapp up -n <app_name> --sku B1
 ```
 
 Une fois le déploiement terminé, revenez à la fenêtre du navigateur que vous avez ouverte à l’étape **Accéder à l’application**, puis actualisez la page.
