@@ -42,12 +42,12 @@ git clone https://github.com/Azure-Samples/nodejs-docs-hello-world
 
 Déplacez le shell dans le répertoire qui contient l’exemple de code et exécutez la commande `az webapp up`.
 
-Dans l’exemple suivant, remplacez <nom de l’application> par un nom d’application unique.
+Dans l’exemple suivant, remplacez <nom de l’application> par un nom d’application unique, le <resourcegroup_name> par le nom de votre RG et le <location> par votre région Azure
 
 ```bash
 cd nodejs-docs-hello-world
 
-az webapp up -n <app_name>
+az webapp up -n <app_name> -g <resourcegroup_name> --sku B1 -l <location>
 ```
 
 L’exécution de cette commande peut prendre quelques minutes. Pendant son exécution, des informations semblables à ce qui suit s’affichent :
