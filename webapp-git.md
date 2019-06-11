@@ -12,7 +12,7 @@ Dans le portail Azure, commencez par créer un Resource Group en cliquant sur `C
 
 ![new resource group](media/portal-new-rg.png)
 
-Dans la blade de dgauche cliquez sur `Resource groups` puis sélectionnez le groupe nouvellement créé.
+Dans la blade de gauche cliquez sur `Resource groups` puis sélectionnez le groupe nouvellement créé.
 
 Dans ce Resource Group, créez une Web App en cliquant sur le bouton `Add` puis en choisissant `web app`.
 
