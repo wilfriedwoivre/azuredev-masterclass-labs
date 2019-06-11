@@ -80,19 +80,40 @@ Pour Azure, aucun besoin d'avoir node en local, ni même de tester votre code. I
 
 # Déployer l'application via Git
 
-TODO : supprimer les références à l'ancien repo Git ou remplacer par 
+Nous allons désormais ajouter la référence au nouveau repository de code. Pour cela, éxécutez les commandes suivantes en remplaçant `<git clone url>` par l'adresse de votre repository:
 
 ```bash
-git remote set-url azure <url>
+git remote add azure <git clone url>
 ```
 
-Exécutez ensuite les commandes suivantes en remplaçant \<git clone url> par l'adresse de votre repository.
+```bash
+git remote -v
+```
+
+Cette commande vous affiche la liste des `origins` définies. Voici ce que vous devriez voir:
+
+```bash
+azure   <git clone url> (fetch)
+azure   <git clone url> (push)
+origin  https://github.com/michaelfery/react-shopping-cart (fetch)
+origin  https://github.com/michaelfery/react-shopping-cart (push)
+```
+
+Si vous partez d'un repertoire complètement neuf vous devez créer le repository en local puis l'associer au repository distant.
+Pour cela, éxécutez les commandes suivantes en remplaçant `<git clone url>` par l'adresse de votre repository:
 
 ```bash
 git init
 git add .
 git commit -m "Initial Commit"
 git remote add azure <git clone url>
+git push azure master
+```
+
+
+Exécutez ensuite les commandes suivantes en remplaçant `<git clone url>` par l'adresse de votre repository.
+
+```bash
 git push azure master
 ```
 
