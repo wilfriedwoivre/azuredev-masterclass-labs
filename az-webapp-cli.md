@@ -45,7 +45,7 @@ La commande `az webapp create` est une commande qui créé une application App S
 Dans Cloud Shell, éxécutez la commande suivante:
 
 ```azurecli-interactive
-az appservice plan create -n deleteme-plan -g deleteme-rg -l westeurope --sku B1
+az webapp create -n deleteme-app -p deleteme-plan -g deleteme-rg
 ```
 
 ## Accéder à l’application
