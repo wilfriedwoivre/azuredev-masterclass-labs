@@ -40,11 +40,10 @@ Dans la page qui s'ouvre sélectionnez `Deployment center`, `Local Git` et valid
 
 ![Deployment center](media/portal-deployment-center.png)
 
-
-
-Il se peut que Azure vous demande de renseigner des credentials Git que vous utiliserez plus tard.
-
 Une fois le repository Git créé, revenez sur l'onglet `Overview` de votre App Service et vous devriez voir l'adresse du nouveau repository.
+
+/!\ Il vous sera demandé de renseigner des credentials pour effectuer les commandes Git de synchronisation.
+Si vous ne l'avez jamais fait, [créez vos identifiants depuis le portail](https://docs.microsoft.com/bs-latn-ba/azure/app-service/deploy-configure-credentials).
 
 ## Cloner le code
 
