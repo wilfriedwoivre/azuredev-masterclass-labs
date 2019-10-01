@@ -42,8 +42,8 @@ Dans la page qui s'ouvre sélectionnez `Deployment center`, `Local Git` et valid
 
 Une fois le repository Git créé, revenez sur l'onglet `Overview` de votre App Service et vous devriez voir l'adresse du nouveau repository.
 
-/!\ Il vous sera demandé de renseigner des credentials pour effectuer les commandes Git de synchronisation.
-Si vous ne l'avez jamais fait, [créez vos identifiants depuis le portail](https://docs.microsoft.com/bs-latn-ba/azure/app-service/deploy-configure-credentials).
+⚠️ Il vous sera demandé de renseigner des credentials pour effectuer les commandes Git de synchronisation.
+Si vous ne l'avez jamais fait, [créez vos identifiants depuis le portail](https://docs.microsoft.com/azure/app-service/deploy-configure-credentials).
 
 ## Cloner le code
 
@@ -58,13 +58,13 @@ cd azdev-webapp-git
 Clonez ensuite le référentiel de l’exemple dans votre répertoire avec la commande suivante.
 
 ```bash
-git clone https://github.com/michaelfery/react-shopping-cart
+git clone https://github.com/Riges/calculator.git
 ```
 
 Placez le shell dans ce nouveau répertoire.
 
 ```bash
-cd react-shopping-cart
+cd calculator
 ```
 
 Si vous souhaitez tester l'application, vous devrez avoir installé node et lancer les commandes suivantes:
@@ -94,8 +94,8 @@ Cette commande vous affiche la liste des `origins` définies. Voici ce que vous 
 ```bash
 azure   <git clone url> (fetch)
 azure   <git clone url> (push)
-origin  https://github.com/michaelfery/react-shopping-cart (fetch)
-origin  https://github.com/michaelfery/react-shopping-cart (push)
+origin  https://github.com/Riges/calculator.git (fetch)
+origin  https://github.com/Riges/calculator.git (push)
 ```
 
 Si vous partez d'un repertoire complètement neuf vous devez créer le repository en local puis l'associer au repository distant.
@@ -109,7 +109,6 @@ git remote add azure <git clone url>
 git push azure master
 ```
 
-
 Exécutez ensuite les commandes suivantes en remplaçant `<git clone url>` par l'adresse de votre repository.
 
 ```bash
@@ -120,7 +119,7 @@ Une fois le déploiement terminé, revenez à la fenêtre du navigateur que vous
 
 L’exemple de code React s’exécute dans App Service sur Linux avec une image intégrée.
 
-![Exemple d’application s’exécutant dans Azure](media/react-shopping-cart-red.png)
+![Exemple d’application s’exécutant dans Azure](media/react-calculator.png)
 
 **Félicitations !** Vous avez déployé votre première application React sur App Service sur Linux.
 
@@ -128,11 +127,11 @@ L’exemple de code React s’exécute dans App Service sur Linux avec une image
 
 Dans votre invite de commande, tapez `code /src/index.css` pour ouvrir l’éditeur de code.
 
- Apportez une petite modification à la feuille de style en ajoutant le code suivant :
+Apportez une petite modification à la feuille de style en ajoutant le code suivant :
 
 ```css
-nav {
-    background-color: #0663D7;
+.component-button.orange button {
+  background-color: #00e6a7;
 }
 ```
 
@@ -142,13 +141,13 @@ Vous allez maintenant redéployer l’application.
 
 ```bash
 git add .
-git commit -m 'fix nav css to azure'
+git commit -m 'fix button css to soat style'
 git push azure master
 ```
 
 Une fois le déploiement terminé, revenez à la fenêtre du navigateur que vous avez ouverte à l’étape **Accéder à l’application**, puis actualisez la page.
 
-![Mise à jour de l’exemple d’application s’exécutant dans Azure](media/react-shopping-cart-blue.png)
+![Mise à jour de l’exemple d’application s’exécutant dans Azure](media/react-calculator-soat.png)
 
 ## Supprimer des ressources
 
