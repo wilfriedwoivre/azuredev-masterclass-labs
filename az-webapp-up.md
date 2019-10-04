@@ -36,7 +36,6 @@ git clone https://github.com/Azure-Samples/nodejs-docs-hello-world
 
 > [!NOTE]
 > L’exemple de fichier index.js définit le port d’écoute sur process.env.PORT. Cette variable d’environnement est affectée par App Service.
->
 
 ## Créer une web app
 
@@ -88,7 +87,7 @@ All done.
 
 ## Accéder à l’application
 
-Dans la sortie de la commande précédente vous pourrez noter 
+Dans la sortie de la commande précédente vous pourrez noter
 Deployment successful.
 
 ```bash
@@ -112,7 +111,7 @@ Dans Cloud Shell, tapez `nano index.js` pour ouvrir l’éditeur de texte nano.
 
 ![Nano index.js](media/quickstart-nodejs/nano-indexjs.png)
 
- Apportez une petite modification au texte de l’appel pour `response.end` :
+Apportez une petite modification au texte de l’appel pour `response.end` :
 
 ```nodejs
 response.end("Hello Azure!");
