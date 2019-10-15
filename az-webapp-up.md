@@ -46,7 +46,7 @@ Dans l’exemple suivant, remplacez <nom de l’application> par un nom d’appl
 ```bash
 cd nodejs-docs-hello-world
 
-az webapp up -n <app_name> -g <resourcegroup_name> --sku B1 -l <location>
+az webapp up -n <app_name> -g <resourcegroup_name> -l <location>
 ```
 
 L’exécution de cette commande peut prendre quelques minutes. Pendant son exécution, des informations semblables à ce qui suit s’affichent :
