@@ -247,6 +247,7 @@ Dans votre Storage Account, allez récupérer votre chaine de connexion dans l'i
 ![](media/portal-sql-keys.png)
 
 N'oubliez pas de remplacer les champs `your_login` et `your_password`
+-- Réna -- Quel login / mdp ?
 
 ### Configurer votre Web App
 
